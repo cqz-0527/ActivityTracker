@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./static/styles.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        
+    <h1>Famous quotes from Saitama</h1>
+    <p>He is one of my favorite characters of all time!</p>
+    {%  if data %}
+    {% endif %}
+    {% for d in data %}
+    <p>{{ d['anime'] }}</p>
+    <p>{{ d['quote'] }}</p>
+    <p> - {{ d['character'] }}</p>
+    {% endfor %}
+    
+    <a href = "powers">
+        <button class="cool-button">Check Out His Powers</button>
+    </a>
+
+    <!-- DATABASE - PO -->
+</div>
+   
+</body>
+</html>
